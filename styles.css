@@ -1,0 +1,105 @@
+.scores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.choices {
+    text-align: center;
+}
+
+.screen {
+    text-align: center;
+}
+
+.result h2 {
+    color: blue;
+    text-align: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#rock {
+    background-color: #a8a8a8;
+    color: white;
+}
+
+#paper {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+#scissors {
+    background-color: #e0e0e0;
+}
+
+.score-board {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.screen {
+    font-size: 20px;
+    margin: 20px 0;
+    min-height: 30px;
+}
+
+.result h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.human-score h3, .computer-score h3 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-top: 5px;
+}
+
+/* For the new game button */
+.new-game {
+    display: block;
+    margin: 20px auto;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .scores {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    button {
+        margin: 5px;
+        padding: 10px 15px;
+    }
+}
